@@ -1,0 +1,228 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f8e9; /* Light green background */
+    color: #2e7d32; /* Earthy green color */
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header .logo img {
+    width: 150px; /* Adjust logo size */
+    height: auto;
+}
+
+header .logo a {
+    text-decoration: none;
+}
+
+header ul.navigation {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header ul.navigation li a {
+    color: #2e7d32;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header ul.navigation li a:hover {
+    color: #388e3c;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    height: 25px;
+    justify-content: space-between;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #2e7d32;
+}
+
+/* Mobile Menu */
+header ul.navigation.active {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header ul.navigation li {
+    margin: 10px 0;
+}
+
+header ul.navigation li a {
+    font-size: 18px;
+}
+
+/* Hero Section */
+#hero {
+    background-color: #81c784;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #388e3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #2e7d32;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+}
+
+/* Product Section */
+#product {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.product-description p {
+    font-size: 18px;
+    color: #333;
+}
+
+.product-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+/* Sustainability Section */
+#sustainability {
+    background-color: #e8f5e9;
+    padding: 50px 20px;
+}
+
+.sustainability-info {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.sustainability-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.sustainability-item h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.sustainability-item p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #81c784;
+}
+
+#contact h2 {
+    font-size: 28px;
+    color: white;
+}
+
+#contact p {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 768px) {
+    header ul.navigation {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    #hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .product-description p, .sustainability-item p {
+        font-size: 16px;
+    }
+
+    .sustainability-info {
+        flex-direction: column;
+    }
+
+    .sustainability-item {
+        width: 80%;
+        margin: 10px auto;
+    }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bamboo Bluetooth Speakers - Eco-friendly, Sustainable Audio Solutions.">
+    <title>Eco Bamboo Bluetooth Speakers</title>
+    <link rel="stylesheet" href="Assets/css/styles.css"> <!-- Correct path to CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"> <!-- AOS Animation -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <!-- Replace 'logo.png' with the actual path to your logo image -->
+                    <img src="Assets/images/logo.png" alt="Bamboo Audio Logo">
+                </a>
+            </div>
+            <ul class="navigation">
+                <li><a href="#product">Product</a></li>
+                <li><a href="#sustainability">Sustainability</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- Hamburger Icon for Mobile -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" data-aos="fade-up">
+        <div class="hero-text">
+            <h1>Eco-Friendly Sound, Sustainable Future</h1>
+            <p>High-quality sound made from sustainable bamboo. Designed to minimize environmental impact while delivering premium audio.</p>
+            <a href="#product" class="cta-button">Discover Our Product</a>
+        </div>
+        <div class="hero-image">
+            <img src="Assets/images/logo.png" alt="Bamboo Bluetooth Speaker">
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section id="product" data-aos="fade-up">
+        <h2>Our Bamboo Bluetooth Speaker</h2>
+        <div class="product-description">
+            <p>Our bamboo Bluetooth speakers combine sleek design with eco-friendly materials to create a unique listening experience. Made from renewable bamboo and powered by a recyclable battery, it offers excellent sound quality while minimizing your carbon footprint.</p>
+        </div>
+        <div class="product-image">
+            <img src="Assets/images/logo.png" alt="Product Image">
+        </div>
+    </section>
+
+    <!-- Sustainability Section -->
+    <section id="sustainability" data-aos="fade-up">
+        <h2>Sustainability at Its Core</h2>
+        <div class="sustainability-info">
+            <div class="sustainability-item">
+                <h3>Eco-Friendly Materials</h3>
+                <p>Bamboo is one of the fastest-growing plants in the world, requiring minimal water and chemicals. It's 100% biodegradable, making it a perfect eco-conscious choice for production.</p>
+            </div>
+            <div class="sustainability-item">
+                <h3>Recyclable Components</h3>
+                <p>We use recyclable batteries and components to reduce electronic waste, ensuring that each speaker has a minimal environmental impact even after use.</p>
+            </div>
+            <div class="sustainability-item">
+                <h3>Low Carbon Footprint</h3>
+                <p>Our production process minimizes energy consumption, helping to keep the carbon footprint as low as possible while maintaining high-quality standards.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" data-aos="fade-up">
+        <h2>Contact Us</h2>
+        <p>Interested in learning more or purchasing? Reach out to us for more details on how we are changing the future of sustainable audio.</p>
+        <a href="mailto:contact@bambooaudio.com" class="cta-button">Contact Us</a>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Bamboo Audio | All Rights Reserved</p>
+    </footer>
+
+    <!-- AOS Animation Library JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        // Hamburger menu toggle script
+        const hamburger = document.getElementById('hamburger');
+        const navigation = document.querySelector('.navigation');
+
+        hamburger.addEventListener('click', () => {
+            navigation.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    </script>
+
+</body>
+
+</html>
