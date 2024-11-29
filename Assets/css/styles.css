@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f1f8e9; /* Light green background */
-    color: #2e7d32; /* Earthy green color */
+    color: #4dd554; /* Earthy green color */
     line-height: 1.6;
 }
 
@@ -40,7 +40,7 @@ header ul.navigation li a {
 }
 
 header ul.navigation li a:hover {
-    color: #388e3c;
+    color: #4dc252;
 }
 
 /* Hamburger Menu */
@@ -111,7 +111,7 @@ header ul.navigation li a {
 }
 
 .cta-button:hover {
-    background-color: #2e7d32;
+    background-color: #40a945;
 }
 
 .hero-image img {
@@ -136,7 +136,13 @@ header ul.navigation li a {
     width: 100%;
     max-width: 500px;
     height: auto;
+    filter: drop-shadow(20px 7px 7px rgb(255, 255, 255));
+    background-image: url("Assets/images/video_preview_0000.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
 }
+
 
 /* Sustainability Section */
 #sustainability {
@@ -151,11 +157,12 @@ header ul.navigation li a {
 }
 
 .sustainability-item {
-    background-color: #ffffff;
+    background-color: #FFFFF0;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 10px 246px rgba(0, 0, 0, 0.1);
     width: 30%;
+    
 }
 
 .sustainability-item h3 {
@@ -165,7 +172,7 @@ header ul.navigation li a {
 
 .sustainability-item p {
     font-size: 16px;
-    color: #333;
+    color: #00000082;
 }
 
 /* Contact Section */
