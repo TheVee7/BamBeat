@@ -3,8 +3,9 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f1f8e9; /* Light green background */
-    color: #4dd554; /* Earthy green color */
+    background-image: url('Assets/images/1000.png'); /* Ensure correct file path */
+    background-repeat: repeat;
+    color: #000000;
     line-height: 1.6;
 }
 
@@ -19,12 +20,8 @@ header {
 }
 
 header .logo img {
-    width: 150px; /* Adjust logo size */
+    width: 120px; /* Smaller logo for mobile */
     height: auto;
-}
-
-header .logo a {
-    text-decoration: none;
 }
 
 header ul.navigation {
@@ -83,7 +80,7 @@ header ul.navigation li a {
 /* Hero Section */
 #hero {
     background-color: #81c784;
-    padding: 50px;
+    padding: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,19 +88,19 @@ header ul.navigation li a {
 }
 
 .hero-text h1 {
-    font-size: 36px;
+    font-size: 30px; /* Smaller font for mobile */
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .hero-text p {
-    font-size: 18px;
+    font-size: 16px;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .cta-button {
-    padding: 10px 20px;
+    padding: 8px 15px;
     background-color: #388e3c;
     color: white;
     text-decoration: none;
@@ -116,81 +113,84 @@ header ul.navigation li a {
 
 .hero-image img {
     width: 100%;
+    max-width: 350px; /* Smaller image for mobile */
     height: auto;
-    max-width: 500px;
 }
 
 /* Product Section */
 #product {
-    padding: 50px 20px;
+    padding: 30px 10px;
     text-align: center;
     background-color: #ffffff;
 }
 
 .product-description p {
-    font-size: 18px;
+    font-size: 16px; /* Adjusted for mobile */
     color: #333;
 }
 
 .product-image img {
     width: 100%;
-    max-width: 500px;
+    max-width: 350px; /* Smaller max width */
     height: auto;
-    filter: drop-shadow(20px 7px 7px rgb(255, 255, 255));
-    background-image: url("Assets/images/video_preview_0000.jpg");
-    background-size: cover;
-    background-repeat: repeat;
-    background-position: center;
+    filter: drop-shadow(15px 5px 5px rgb(255, 255, 255));
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
+.product-image img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(20px 7px 7px rgba(0, 0, 0, 0.5));
+}
 
 /* Sustainability Section */
 #sustainability {
-    background-color: #e8f5e9;
-    padding: 50px 20px;
+    background-color: #afcdb1;
+    padding: 30px 10px;
 }
 
 .sustainability-info {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap; /* Wrap items for smaller screens */
     gap: 20px;
+    justify-content: center; /* Center items */
 }
 
 .sustainability-item {
-    background-color: #FFFFF0;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 10px 246px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    
+    background-color: #f2d4d4;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgb(0, 0, 0);
+    width: 100%; /* Full width on mobile */
+    max-width: 300px; /* Limit max width */
+    margin: 10px auto;
 }
 
 .sustainability-item h3 {
     font-size: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .sustainability-item p {
-    font-size: 16px;
-    color: #00000082;
+    font-size: 14px;
+    color: #000000;
 }
 
 /* Contact Section */
 #contact {
-    padding: 50px 20px;
+    padding: 30px 10px;
     text-align: center;
     background-color: #81c784;
 }
 
 #contact h2 {
-    font-size: 28px;
+    font-size: 24px; /* Adjusted size for mobile */
     color: white;
 }
 
 #contact p {
-    font-size: 18px;
+    font-size: 16px; /* Adjusted for mobile */
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 /* Footer */
@@ -198,7 +198,7 @@ footer {
     background-color: #2e7d32;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 15px 0;
 }
 
 /* Media Query for Mobile */
@@ -217,11 +217,11 @@ footer {
     }
 
     .hero-text h1 {
-        font-size: 30px;
+        font-size: 24px;
     }
 
     .product-description p, .sustainability-item p {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .sustainability-info {
@@ -229,7 +229,7 @@ footer {
     }
 
     .sustainability-item {
-        width: 80%;
+        width: 90%; /* Full width with slight margin */
         margin: 10px auto;
     }
 }
